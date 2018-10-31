@@ -28,8 +28,7 @@ public class ChatSocket extends Thread {
 
         try {
             Writer writer=new OutputStreamWriter(socket.getOutputStream());
-            writer.write("Hello,Server. My name is client! ");
-            writer.write("over\n");
+            writer.write("input：\n ");
             writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
